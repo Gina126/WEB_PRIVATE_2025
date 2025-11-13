@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2c7e4;
+}
+.card {
+  background-color: #f8daee;
+  padding: 32px 24px;
+  border-radius: 24px;
+  text-align: center;
+  width: 360px;
+  /* transition: cubic-bezier(0.5, 1, 0.2, 1); */
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.button {
+}
