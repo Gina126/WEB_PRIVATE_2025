@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>CheckPoint</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Nhập điểm sinh viên</h1>
+      <input type="text" id="nameInput" placeholder="Nhập tên sinh viên..." />
+      <input
+        type="number"
+        id="scoreInput"
+        placeholder="Điểm số (0-10)..."
+        min="0"
+        max="10"
+      />
+      <button id="addBtn">Thêm vào danh sách</button>
+      <div class="label-list">Danh Sách Lớp</div>
+      <ul id="studentList"></ul>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

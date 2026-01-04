@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <div class="box">
+      <h1></h1>
+    </div>
+    <h1></h1>
+    <p></p>
+    <a href=""></a>
+  </body>
+  <script src="index.js"></script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+  <body>
+    <h1>Removing child Node</h1>
+    <h2>Asabeneh Yetayeh challenges in 2020</h1>
+    <ul>
+        <li>30DaysOfPython Challenge Done</li>
+        <li>30DaysOfJavaScript Challenge Done</li>
+        <li>30DaysOfReact Challenge Coming</li>
+        <li>30DaysOfFullStack Challenge Coming</li>
+        <li>30DaysOfDataAnalysis Challenge Coming</li>
+        <li>30DaysOfReactNative Challenge Coming</li>
+        <li>30DaysOfMachineLearning Challenge Coming</li>
+    </ul>
+    <script>
+      //   let title;
+      //   for (let i = 0; i < 3; i++) {
+      //     title = document.createElement("h1");
+      //     title.className = "title";
+      //     title.style.fontSize = "24px";
+      //     title.textContent = i;
+      //     console.log(title);
+      //   }
+
+    //   let title;
+    //   for (let i = 0; i < 3; i++) {
+    //     title = document.createElement("h1");
+    //     title.className = "title";
+    //     title.style.fontSize = "24px";
+    //     title.textContent = i;
+    //     document.body.appendChild(title); //them element
+    //   }
+
+    /* Sử dụng querySelector để lấy ra thẻ ul */
+        const ul = document.querySelector('ul')
+        /* Sử dụng querySelectorAll để lấy ra tất cả thẻ li*/
+        const lists = document.querySelectorAll('li')
+        /* Sử dụng vòng lặp duyệt qua mảng các thẻ li và gọi hàm removeChild() thực hiện xóa từng thẻ li khỏi thẻ ul */
+        for (const list of lists) {
+            ul.removeChild(list)
+        }
+    </script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <button>Click Me</button>
+
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("click", (e) => {
+        console.log("e gives the event listener object:", e);
+        console.log("e.target gives the selected element: ", e.target);
+        console.log(
+          "e.target.textContent gives content of selected element: ",
+          e.target.textContent
+        );
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Data Binding using input or change event</h1>
+
+    <input type="text" placeholder="say something" />
+    <p></p>
+
+    <script>
+      const input = document.querySelector("input");
+      const p = document.querySelector("p");
+
+      input.addEventListener("input", (e) => {
+        p.textContent = e.target.value;
+      });
+    </script>
+  </body>
+</html>
